@@ -595,6 +595,7 @@ img {
 .footer-main {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .footer-logo {
   margin-bottom: 20px;
@@ -625,7 +626,6 @@ img {
 
 .footer-join {
   min-width: 206px;
-  margin-left: 70px;
 }
 .join-text {
   margin-bottom: 20px;
@@ -658,5 +658,66 @@ img {
   background-color: var(--accent-color);
 }
 .join-icon {
+  fill: currentColor;
+}
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+}
+.footer-subscribe-text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--main-light-color);
+}
+.footer-subscribe-list {
+  display: flex;
+}
+.footer-subscribe-input {
+  padding: 15px;
+  min-width: 358px;
+  min-height: 50px;
+
+  background-color: var(--primary-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer-subscribe-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-subscribe-list .footer-subscribe-item + .footer-subscribe-item {
+  margin-left: 12px;
+}
+.footer-subscribe-btn {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 28px;
+  min-width: 200px;
+  max-height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: var(--main-light-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.footer-subscribe-icon {
+  margin-left: 10px;
+
   fill: currentColor;
 }
