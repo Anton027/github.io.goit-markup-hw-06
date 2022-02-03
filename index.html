@@ -71,15 +71,6 @@
                     Заказать услугу
                 </button>
             </div>
-            <div class="backdrop is-hidden" data-modal>
-                <div class="modal">
-                    <button data-modal-close type="button" class="modal-btn">
-                        <svg class="modal-icon" width="11" height="11">
-                            <use href="./images/svg/sprite.svg#close"></use>
-                        </svg>
-                    </button>
-                </div>
-            </div>
         </section>
  <!-- SECTION  -->
         <section class="benefits section">
@@ -468,11 +459,12 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer-subscribe">
+            <form class="footer-subscribe">
                 <b class="footer-subscribe-text">Подпишитесь на рассылку</b>
                 <ul class="footer-subscribe-list">
                     <li class="footer-subscribe-item">
-                        <input class="footer-subscribe-input" type="email" name="mail" id="" placeholder="E-mail" label>
+                        <label for="mail"></label>
+                        <input class="footer-subscribe-input" type="email" name="mail" id="" placeholder="E-mail">
                     </li>
                     <li class="footer-subscribe-item">
                         <button class="footer-subscribe-btn" type="submit">
@@ -483,9 +475,46 @@
                         </button>
                     </li>
                 </ul>
-            </div>
+            </form>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close type="button" class="modal-btn">
+                <svg class="modal-icon" width="11" height="11">
+                    <use href="./images/svg/sprite.svg#close"></use>
+                </svg>
+            </button>
+            <form class="modal-form">
+                <h3 class="modal-form-title">
+                    Оставьте свои данные, мы вам перезвоним
+                </h3>
+                <ul class="madal-form-list">
+                    <li class="modal-form-item">
+                        <label for="name" class="modal-form-name">Имя</label>
+                        <input type="text" id="name" name="name" class="modal-form-input">
+                    </li>
+                    <li class="modal-form-item">
+                        <label for="tel" class="modal-form-name">Телефон</label>
+                        <input type="tel" id="tel" name="tel" class="modal-form-input">
+                    </li>
+                    <li class="modal-form-item">
+                        <label for="mail" class="modal-form-name">Почта</label>
+                        <input type="email" id="mail" name="mail" class="modal-form-input">
+                    </li>
+                    <li class="modal-form-item">
+                        <label for="comment" class="modal-form-name">Комментарий</label>
+                        <textarea name="comment" id="comment" rows="10"></textarea>
+                    </li>
+                    <li class="modal-form-item">
+                        <input type="checkbox" name="policy" id="policy" class="modal-form-input">
+                        <label for="policy" class="modal-form-name">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+                    </li>
+                </ul>
+                <button type="submit" class="modal-form-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 </html>
