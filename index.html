@@ -485,14 +485,14 @@
                     <use href="./images/svg/sprite.svg#close"></use>
                 </svg>
             </button>
-            <form class="modal-form">
-                <h3 class="modal-form-title">
+            <form name="modal-form" class="modal-form" autocomplete="on">
+                <p class="modal-form-title">
                     Оставьте свои данные, мы вам перезвоним
-                </h3>
+                </p>
                 <ul class="modal-form-list">
                     <li class="modal-form-item">
-                        <label for="name" class="modal-form-label">Имя</label>
-                        <input type="text" id="name" name="name" class="modal-form-input padding-left">
+                        <label for="username" class="modal-form-label">Имя</label>
+                        <input type="text" id="username" name="username" class="modal-form-input padding-left">
                         <svg width="18" height="18" class="modal-form-icon">
                             <use href="./images/svg/sprite.svg#person"></use>
                         </svg>
@@ -505,8 +505,8 @@
                         </svg>
                     </li>
                     <li class="modal-form-item">
-                        <label for="mail" class="modal-form-label">Почта</label>
-                        <input type="email" id="mail" name="mail" class="modal-form-input padding-left">
+                        <label for="email" class="modal-form-label">Почта</label>
+                        <input type="email" id="email" name="email" class="modal-form-input padding-left">
                         <svg width="18" height="18" class="modal-form-icon">
                             <use href="./images/svg/sprite.svg#email"></use>
                         </svg>
@@ -516,8 +516,11 @@
                         <textarea name="comment" id="comment" rows="10" class="modal-form-textarea" placeholder="Введите текст"></textarea>
                     </li>
                     <li class="modal-form-item">
-                        <input type="checkbox" name="policy" id="policy" class="modal-checkbox-input">
-                        <label for="policy" class="modal-checkbox-label">Соглашаюсь с рассылкой и принимаю <a class="modal-form-link" href="#">Условия договора</a></label>
+                        <label for="policy" class="modal-checkbox-label">
+                            <input type="checkbox" name="policy" id="policy" class="modal-checkbox-input">
+                            <span class="checkbox-icon"></span>
+                            Соглашаюсь с рассылкой и принимаю <a class="modal-form-link" href="#">Условия договора</a>
+                        </label>
                     </li>
                 </ul>
                 <button type="submit" class="modal-form-btn">Отправить</button>
