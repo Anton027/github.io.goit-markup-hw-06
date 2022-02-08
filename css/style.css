@@ -337,6 +337,8 @@ img {
 }
 .modal-form-icon {
   fill: currentColor;
+
+  transform: color var(--transition-time) var(--function-time);
 }
 .modal-form-item:nth-child(4) {
   margin-bottom: 20px;
@@ -373,6 +375,8 @@ img {
   resize: none;
   padding: 12px 16px;
   max-height: 120px;
+
+  transform: border-color var(--transition-time) var(--function-time);
 
   outline: none;
 }
@@ -834,6 +838,7 @@ img {
 }
 .footer-subscribe-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .footer-subscribe-input {
   padding: 15px;
