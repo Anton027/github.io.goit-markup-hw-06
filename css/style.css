@@ -429,7 +429,8 @@ img {
   border-radius: 2px;
 }
 
-.modal-checkbox-input:checked + .checkbox-icon {
+.modal-checkbox-input:checked + .checkbox-icon,
+.modal-checkbox-input:focus + .checkbox-icon {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
   background-image: url(../images/svg/check.svg);
